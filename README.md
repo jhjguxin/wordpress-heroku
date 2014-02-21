@@ -97,6 +97,34 @@ WordPress needs to update the database. After push, navigate to:
 WordPress will prompt for updating the database. After that you'll be good
 to go.
 
+## Update to github
+
+update plugin
+
+```shell
+# update plugin
+git commit # type "plugin 'google-analytics-for-wordpress' update to '4.3.5'"
+```
+
+update wordpress
+
+```shell
+git commit # type "wordpress update to '3.8.1'"
+git tag v3.8.1_francis # taged by wordpress version
+```
+
+push to github
+
+```shell
+# push to github
+git push origin
+git push origin --tags
+```
+
+```shell
+# git push origin --delete production # remove remote branch 'production' on github
+```
+
 ## Wiki
 
 * [Custom Domains](https://github.com/mhoofman/wordpress-heroku/wiki/Custom-Domains)
